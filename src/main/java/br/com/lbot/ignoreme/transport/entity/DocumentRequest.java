@@ -3,6 +3,8 @@ package br.com.lbot.ignoreme.transport.entity;
 public class DocumentRequest {
     private static final String DEFAULT_COMMENT = "# Created by IGNOREME";
     private String text;
+    public DocumentRequest() {
+    }
     public DocumentRequest(String text) {
         this.text = text;
     }
