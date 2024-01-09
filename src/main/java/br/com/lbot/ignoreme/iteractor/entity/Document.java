@@ -1,15 +1,15 @@
-package br.com.lbot.ignoreme.interactor.entity;
+package br.com.lbot.ignoreme.iteractor.entity;
 
 public class Document {
-
-    private static final String DEFAULT_COMMENT = "# Created by IGNOREME";
+    private Header header;
     private String text;
     private String technology;
+    private Footer footer;
     public Document(String text) {
         this.text = text;
     }
     public String getText() {
-        return DEFAULT_COMMENT + " " +text;
+        return text;
     }
     public void setText(String text) {
         this.text = text;
@@ -21,5 +21,21 @@ public class Document {
 
     public void setTechnology(String technology) {
         this.technology = technology;
+    }
+
+    public Header getHeader() {
+        return header;
+    }
+
+    public void setHeader(Header header) {
+        this.header = header;
+    }
+
+    public Footer getFooter() {
+        return footer;
+    }
+
+    public void setFooter(Footer footer) {
+        this.footer = footer;
     }
 }

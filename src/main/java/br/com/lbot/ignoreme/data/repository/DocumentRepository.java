@@ -8,8 +8,7 @@ import java.util.Optional;
 
 @Repository
 public interface DocumentRepository extends CrudRepository<DocumentEntity, Long> {
-
-    Optional<DocumentEntity> findDocumentByTechnology(String technology);
+    Optional<DocumentEntity> findByTechnology(String technology);
     DocumentEntity save(DocumentEntity documentEntity);
 
 }

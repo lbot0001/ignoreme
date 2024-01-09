@@ -6,12 +6,15 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class DocumentHeaderEntity {
-
+public class HeaderEntity {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
     private String text;
+    private String type;
+
+    public HeaderEntity() {
+    }
 
     public Long getId() {
         return id;
@@ -27,5 +30,13 @@ public class DocumentHeaderEntity {
 
     public void setText(String text) {
         this.text = text;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 }

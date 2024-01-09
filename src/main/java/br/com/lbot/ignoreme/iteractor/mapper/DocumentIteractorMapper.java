@@ -1,8 +1,8 @@
-package br.com.lbot.ignoreme.interactor.mapper;
+package br.com.lbot.ignoreme.iteractor.mapper;
 
 
 import br.com.lbot.ignoreme.data.entity.DocumentEntity;
-import br.com.lbot.ignoreme.interactor.entity.Document;
+import br.com.lbot.ignoreme.iteractor.entity.Document;
 import br.com.lbot.ignoreme.transport.entity.DocumentRequest;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
