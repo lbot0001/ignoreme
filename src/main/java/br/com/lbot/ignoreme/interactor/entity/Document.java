@@ -4,6 +4,7 @@ public class Document {
 
     private static final String DEFAULT_COMMENT = "# Created by IGNOREME";
     private String text;
+    private String technology;
     public Document(String text) {
         this.text = text;
     }
@@ -14,4 +15,11 @@ public class Document {
         this.text = text;
     }
 
+    public String getTechnology() {
+        return technology;
+    }
+
+    public void setTechnology(String technology) {
+        this.technology = technology;
+    }
 }
