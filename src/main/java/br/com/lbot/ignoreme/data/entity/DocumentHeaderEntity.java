@@ -6,22 +6,19 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class DocumentEntity {
+public class DocumentHeaderEntity {
+
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
-    private String technology;
     private String text;
-
-    public DocumentEntity() {
-    }
-
-    public DocumentEntity(String text) {
-        this.text = text;
-    }
 
     public Long getId() {
         return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getText() {
@@ -30,13 +27,5 @@ public class DocumentEntity {
 
     public void setText(String text) {
         this.text = text;
-    }
-
-    public String getTechnology() {
-        return technology;
-    }
-
-    public void setTechnology(String technology) {
-        this.technology = technology;
     }
 }

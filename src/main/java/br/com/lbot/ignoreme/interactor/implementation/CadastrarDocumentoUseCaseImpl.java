@@ -1,6 +1,5 @@
 package br.com.lbot.ignoreme.interactor.implementation;
 
-import br.com.lbot.ignoreme.data.entity.DocumentEntity;
 import br.com.lbot.ignoreme.data.repository.DocumentRepository;
 import br.com.lbot.ignoreme.interactor.CadastrarDocumentoUseCase;
 import br.com.lbot.ignoreme.interactor.entity.Document;
